@@ -1,0 +1,246 @@
+@charset "UTF-8";
+html {
+  font-family: "Noto Sans", "Noto Sans T Chinese", "微軟正黑體", sans-serif;
+  color: #333;
+}
+
+html, body, div, nav, section, article, header, footer, h1, h2, h3, h4, p {
+  font-size: 20px;
+}
+
+html, body, div, nav, section, article, header, footer, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #efefef;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.no.margin {
+  margin: 0;
+}
+
+.float.right {
+  float: right;
+}
+
+.align.center {
+  text-align: center;
+}
+
+.clear.both {
+  clear: both;
+}
+
+#topbar {
+  background-color: #AA987B;
+}
+#topbar .ui.menu {
+  background-color: #AA987B;
+  margin-bottom: 0;
+}
+#topbar .ui.menu .item {
+  color: #fff;
+  font-size: 1rem;
+}
+#topbar .ui.menu .logo.image {
+  width: 1rem;
+  margin: -1rem 0.5rem -0.1rem 0;
+  display: inline;
+}
+
+#bottombar {
+  background-color: #D8D0B0;
+}
+#bottombar .ui.menu {
+  background-color: #D8D0B0;
+}
+
+.menu.bar {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#event #header {
+  position: relative;
+  background: url('/public/img/bg-grass.png?1419418593') repeat-x center bottom, #576b2e;
+  background: url('/public/img/bg-grass.png?1419418593') repeat-x center bottom, #5ea092;
+  background: url(https://raw.githubusercontent.com/g0v/don-constitute/gh-pages/public/img/bg-grass.png) repeat-x center bottom, #31343d;
+  text-align: center;
+}
+#event #header .background {
+  height: 15rem;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+#event #header .background .image {
+  height: 15rem;
+  display: inline;
+}
+#event #header .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(60%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.5));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.5));
+}
+#event #header .cover .title {
+  position: absolute;
+  width: 100%;
+  bottom: 1.5rem;
+}
+#event #header .cover .title .header {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+#event #content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#event #content .description {
+  padding: 1rem;
+}
+#event #content .description p {
+  font-size: 1.2rem;
+}
+#event #content .event.meta {
+  margin: 0;
+  background-color: #E4E8E1;
+  background-color: rgba(152, 192, 183, 0.5);
+}
+#event #content .event.meta .item .key {
+  font-weight: bold;
+}
+#event #content .event.meta .item .value {
+  margin-left: 1rem;
+}
+#event #content #log .icon {
+  margin: 0;
+}
+#event #content #log .icon.red {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+}
+#event #content #log .icon.gray {
+  color: rgba(0, 0, 0, 0.5);
+}
+#event #content #log .icon.yellow {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+}
+#event #content #log #sample .key {
+  text-align: center;
+}
+#event #content #log #sample .value {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+#event #content #log #pilot {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+#event #content #log #filter {
+  margin: 1rem 0;
+}
+#event #content #log #list .entry {
+  position: relative;
+  margin-left: 5rem;
+  margin-right: 6rem;
+  margin-top: 1rem;
+}
+#event #content #log #list .entry .segment {
+  margin-bottom: 0;
+}
+#event #content #log #list .entry .segment .rating {
+  position: absolute;
+  left: -5rem;
+  top: 1rem;
+}
+#event #content #log #list .entry .segment .content {
+  font-size: 1.2rem;
+  margin-top: -0.2em;
+  margin-bottom: 0;
+  color: #000;
+}
+#event #content #log #list .entry .segment .tag {
+  float: right;
+  margin: -0.2rem 0 -1rem 1rem;
+}
+#event #content #log #list .entry .segment .tag .ui.label {
+  margin-bottom: 0.5rem;
+}
+#event #content #log #list .entry .segment .action {
+  position: absolute;
+  right: -6rem;
+  top: 0.6rem;
+}
+#event #content #log #list .entry .detail .comment {
+  padding: 0 1rem;
+  margin: 0;
+  background-color: #E4E8E1;
+}
+#event #content #log #list .entry .detail .comment .item:first-child {
+  padding-top: 0.5rem;
+}
+#event #content #log #list .entry .detail .comment .item:last-child {
+  padding-bottom: 0.5rem;
+}
+#event #content #log #list .entry .detail .subentry {
+  margin-right: -6rem;
+}
+#event #content #log #list .entry .detail .subentry .entry:first-child {
+  margin-top: 1rem;
+}
+#event #content #footer {
+  padding: 1rem 1rem 0 1rem;
+  background-color: #31343d;
+  color: #E4E8E1;
+}
+#event #content #footer .section {
+  margin-right: 1rem;
+  display: inline-block;
+  min-height: 3rem;
+}
+#event #content #footer span.text {
+  margin-right: 1rem;
+}
+#event #content #footer .links .button {
+  margin-bottom: 0.5rem;
+}
+#event #content #footer .social {
+  padding-top: 0.8rem;
+}
+#event #content #footer .social .button {
+  position: relative;
+  top: -0.8rem;
+}
