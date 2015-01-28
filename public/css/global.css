@@ -127,8 +127,14 @@ a, a:link {
 #lesson #header {
   background-color: #336699;
 }
+#lesson .download.section {
+  text-align: center;
+  padding: 1rem;
+  margin: 0 -1rem -0.5rem -1rem;
+  background-color: #eeeeee;
+}
 #lesson .placeholder {
-  height: 1.5rem;
+  margin-top: 2.5rem !important;
 }
 #lesson .ui.top.attached.label {
   text-align: center;
@@ -136,6 +142,9 @@ a, a:link {
 #lesson .ui.top.attached.label h3 .title {
   padding: 0.5rem 0;
   display: inline-block;
+}
+#lesson .ui.grid {
+  margin-top: 0.5rem;
 }
 #lesson .list .item .link {
   margin-left: 0.5rem;
