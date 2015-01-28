@@ -19,11 +19,18 @@ block content
             h3
               span.title 五年級（第一冊）
               span.float.right
-                a(href="http://etblue.gitbooks.io/locus-musictextbook-demo/",target="_blank").ui.icon.right.labeled.button.compact.basic.black 下載電子書
-                  i.icon.download
+                .ui.icon.right.labeled.button.compact.basic.black 下載電子書
+                  i.icon.down.chevron
                 a(href="").ui.icon.right.labeled.button.compact.basic.black 購買紙本書
                   i.icon.cart
           .placeholder
+          .download.section.hidden
+            .ui.icon.right.labeled.compact.button.red epub
+              i.icon.download
+            .ui.icon.right.labeled.compact.button.red mobi
+              i.icon.download
+            .ui.icon.right.labeled.compact.button.red pdf
+              i.icon.download
           .ui.two.column.stackable.grid.divided
             .column
               h3
@@ -70,11 +77,18 @@ block content
             h3
               span.title 六年級（第二冊）
               span.float.right
-                a(href="http://etblue.gitbooks.io/locus-musictextbook-demo/",target="_blank").ui.icon.right.labeled.button.compact.basic.black 下載電子書
-                  i.icon.download
+                .ui.icon.right.labeled.button.compact.basic.black 下載電子書
+                  i.icon.down.chevron
                 a(href="").ui.icon.right.labeled.button.compact.basic.black 購買紙本書
                   i.icon.cart
           .placeholder
+          .download.section.hidden
+            .ui.icon.right.labeled.compact.button.red epub
+              i.icon.download
+            .ui.icon.right.labeled.compact.button.red mobi
+              i.icon.download
+            .ui.icon.right.labeled.compact.button.red pdf
+              i.icon.download
           .ui.two.column.stackable.grid.divided
             .column
               h3
@@ -117,7 +131,10 @@ block content
                     | 流行音樂產業的表演和製作
                   include book-menu-link
 
-
 block script
   script.
     $("#topbar .icon.book").parent(".item").addClass("active");
+    $(".ui.top.attached.label .down.chevron").parent(".button").on("click tap", function(){
+      $(this).parents(".ui.segment").find(".download.section").slideToggle();
+    });
+    $('.popup').popup();
