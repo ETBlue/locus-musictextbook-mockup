@@ -5,7 +5,7 @@ html
   font-family: 'Noto Sans', 'Noto Sans T Chinese', '微軟正黑體', sans-serif
   color: #333
 
-html, body, div, nav, section, article, header, footer, h1, h2, h3, h4, p
+html, body, div, nav, section, article, header, footer
   font-size: 20px
   //font-weight: bold
 
@@ -40,35 +40,7 @@ a, a:link
 .clear.both
   clear: both
 
-#topbar
-  position: fixed
-  left: 0
-  right: 0
-  top: 0
-  background-color: #333
-  z-index: 10
-  .ui.menu
-    margin-bottom: 0
-    .item
-      font-size: 1rem
-    .logo.image
-      height: 1rem
-      //-margin: -1rem 0.5rem -0.1rem 0
-      display: inline
-
-#content
-  padding: 2.57rem 0
-
-#bottombar
-  background-color: #333
-  position: fixed
-  left: 0
-  right: 0
-  bottom: 0
-  z-index: 10
-  .ui.menu
-
-.page.wrapper
+.horizontal.wrapper
   max-width: 1200px
   margin-left: auto
   margin-right: auto
@@ -80,66 +52,39 @@ a, a:link
   +border-radius(0)
   +box-shadow(none)
 
+.vertical.wrapper
+  margin-bottom: 3rem
 
-#music, #news, #lesson, #download
-  padding: 1rem 0
-  #header
-    height: 8rem
-    margin: -1rem 0 1rem 0
-    .header
-      text-align: center
-
-#music
-  #header
-    background-color: #936
-#news
-  #header
-    background-color: #d90
-#download
-  #header
-    background-color: #396
-
-#lesson
-  #header
-    background-color: #369
-  .download.section
-    text-align: center
-    padding: 1rem
-    margin: 0 -1rem -0.5rem -1rem
-    background-color: #eee
-  .placeholder
-    margin-top: 2.5rem!important
-  .ui.top.attached.label
-    text-align: center
-    h3
-      .title
-        padding: 0.5rem 0
-        display: inline-block
-  .ui.grid
-    margin-top: 0.5rem
-  .list
+#topbar
+  background-color: #333
+  .ui.menu
+    margin-bottom: 0
     .item
-      .link
-        margin-left: 0.5rem
+      font-size: 1rem
+    .logo.image
+      height: 1rem
+      //-margin: -1rem 0.5rem -0.1rem 0
+      display: inline
 
-#book
-  position: absolute
-  top: 2.6rem
-  bottom: 2.6rem
+#content
+  padding: 1rem
+
+#bottombar
+  background-color: #333
+  position: fixed
   left: 0
   right: 0
-  .frame
-    width: 100%
-    max-width: 1200px
-    margin-left: auto
-    margin-right: auto
-    position: relative
-    top: 0
-    bottom: 0
-    iframe
-      width: 100%
-      height: 100%
-      margin-bottom: -5px
-      border: 0
-      overflow-y: hidden
+  bottom: 0
+  z-index: 10
+  .ui.menu
 
+#lesson
+  .description
+    max-width: 100%
+
+#header
+  margin: 0 -1rem 1rem -1rem
+  background-color: rgba(#369,0.2)
+  padding: 0 1rem
+  #title
+    padding: 1rem 1rem 0 1rem

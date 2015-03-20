@@ -5,132 +5,68 @@ block title
 
 block content
 
-  #content
+  .horizontal.wrapper
+    .vertical.wrapper
 
-    section#lesson
+      #content
 
-      header#header
-        .page.wrapper
-          p.header (本週熱門單元 / 裝飾圖片)
+        section#lesson
+          .ui.fluid.four.item.menu
+            a.item.active 流行音樂與我
+              .ui.label 五上
+            a.item 流行音樂與生活
+              .ui.label 五下
+            a.item 流行音樂與社會
+              .ui.label 六上
+            a.item 流行音樂與世界
+              .ui.label 六下
+          .ui.divided.items
+            .item
+              a(href='lesson-1-1').image
+                img(src='img/image.png')
+              .content
+                a(href='lesson-1-1').header 流行音樂是什麼
+                .description
+                  p 其實現在我們所謂的「古典樂」（比如莫札特、貝多芬），多數就是以前年代曾經盛極一時的「流行樂」；相對來說，當代的流行音樂中則又有很多結合古典音樂的元素（比如Beatles使用過巴哈，Queen以歌劇編曲），我們將會從這些有趣實例破題，讓小朋友知道流行音樂在人類文明歷史上的恆久價值（而不只是朝生暮死、狹義的「流行」而已）。同時，也藉此給予「流行音樂」一個簡單明瞭的界定：「深受民眾喜歡的、能在社會上廣為散播並流傳的音樂，就是流行音樂」。
+                .extra
+                  include book-menu-link
+                //-.extra
+                  //-a(href='',target='_blank').ui.icon.labeled.button 教案
+                    i.icon.download
+            .item
+              a(href='lesson-1-1').image
+                img(src='img/image.png')
+              .content
+                a(href='lesson-1-1').header 流行音樂和我的喜怒哀樂
+                .description
+                  p 首先介紹流行歌曲的基本構成：旋律、節奏、歌詞。並且從最基礎的、流行音樂如何引導個體自我進行情緒表達談起。課程內容將透過我們選取的若干古今中外有名歌曲，作為案例分別代表喜愛、憤怒、哀傷和開心等幾種基本情緒的表現。透過交叉討論，要讓小朋友知道：這些情緒表達不僅透過歌詞（這其實是文學就做得到的），更需連帶有相應情緒的旋律（如大小調的差別）和節奏（如快慢歌的設計）。此外，除了聆聽案例，本課也會嘗試讓小朋友分組練習寫一段帶有不同情緒的歌詞、並進行即興的哼唱遊戲。
+                .extra
+                  include book-menu-link
 
-      .page.wrapper
-        .ui.segment
-          .ui.top.attached.label.teal
-            h3
-              span.title 五年級（第一冊）
-              span.float.right
-                .ui.icon.right.labeled.button.compact.basic.black 下載電子書
-                  i.icon.down.chevron
-          .placeholder
-          .download.section.hidden
-            .ui.icon.right.labeled.compact.button.red epub
-              i.icon.download
-            .ui.icon.right.labeled.compact.button.red mobi
-              i.icon.download
-            .ui.icon.right.labeled.compact.button.red pdf
-              i.icon.download
-          .ui.two.column.stackable.grid.divided
-            .column
-              h3
-                .ui.tiny.horizontal.label.black 第一單元
-                | 爺爺奶奶的流行歌
-              .ui.divided.list
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第一課
-                    | 什麼是流行音樂
+            .item
+              a(href='lesson-1-1').image
+                img(src='img/image.png')
+              .content
+                a(href='lesson-1-1').header 流行音樂和我的身體五感
+                .description
+                  p 流行「歌」是流行「音樂」的主要構成形式，但流行音樂卻不一定是有歌詞的表現（比如電音舞曲），也可能只有節奏和詞卻不太有旋律（比如饒舌）。這些多元的流行音樂創作，都不斷在呼應個體自我在情緒表達以外的身體感官知覺：包括視覺、聽覺、味覺、嗅覺、觸覺。這節課就是要透過一些古今中外選曲，讓小朋友用身體去「體驗」流行音樂所能喚起和聯結的感官愉悅。比如說，聽到這首歌或曲，你腦海會浮現什麼畫面？聞到什麼味道？覺得溫暖或發冷？更進一步，這節課也會讓小朋友透過實際「聞歌起舞」、動起來，了解流行音樂和身體律動乃至各類舞蹈的密切關係。
+                .extra
                   include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第二課
-                    | 時光機器教流行歌
-                  include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第三課
-                    | 唱爺爺奶奶的流行歌
-                  include book-menu-link
-            .column
-              h3
-                .ui.tiny.horizontal.label.black 第二單元
-                | 民歌與創作
-              .ui.divided.list
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第一課
-                    | 民歌的開始
-                  include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第二課
-                    | 練唱民歌
-                  include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第三課
-                    | 音樂創作、音樂消費及著作權
-                  include book-menu-link
-        .ui.segment
-          .ui.top.attached.label.green
-            h3
-              span.title 六年級（第二冊）
-              span.float.right
-                .ui.icon.right.labeled.button.compact.basic.black 下載電子書
-                  i.icon.down.chevron
-          .placeholder
-          .download.section.hidden
-            .ui.icon.right.labeled.compact.button.red epub
-              i.icon.download
-            .ui.icon.right.labeled.compact.button.red mobi
-              i.icon.download
-            .ui.icon.right.labeled.compact.button.red pdf
-              i.icon.download
-          .ui.two.column.stackable.grid.divided
-            .column
-              h3
-                .ui.tiny.horizontal.label.black 第三單元
-                | 抒情歌和搖滾
-              .ui.divided.list
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第一課
-                    | 歌詞動人的抒情歌
-                  include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第二課
-                    | 旋律動人的抒情歌
-                  include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第三課
-                    | 躍動的搖滾
-                  include book-menu-link
-            .column
-              h3
-                .ui.tiny.horizontal.label.black 第四單元
-                | 饒舌、電音和流行音樂產業
-              .ui.divided.list
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第一課
-                    | 饒舌歌
-                  include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第二課
-                    | 電子舞曲
-                  include book-menu-link
-                .item
-                  a(href="book.html")
-                    .ui.tiny.horizontal.label 第三課
-                    | 流行音樂產業的表演和製作
-                  include book-menu-link
+
+          //-h3.ui.header 第一課  沒有網路之前，音樂怎麼流行？
+          //-h3.ui.header 第二課  一起唱出我們的親密情感
+          //-h3.ui.header 第三課  生活中無所不在的音樂影響
+          //-h3.ui.header 第一課  流行歌的不同主題和社會背景
+          //-h3.ui.header 第二課  不同群體的人唱自己的歌
+          //-h3.ui.header 第三課  改變社會或啓發人心的歌
+          //-h3.ui.header 第一課  在地音樂與全球音樂的融合
+          //-h3.ui.header 第二課  翻唱和取樣是創作？還是抄襲？
+          //-h3.ui.header 第三課  自己動手做流行音樂
+
+
 
 block script
   script.
     $("#topbar .icon.book").parent(".item").addClass("active");
-    $(".ui.top.attached.label .down.chevron").parent(".button").on("click tap", function(){
-      $(this).parents(".ui.segment").find(".download.section").slideToggle();
-    });
     $('.popup').popup();
+    //-$('#lesson').load('book/SUMMARY.html ul');
