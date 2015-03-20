@@ -27,7 +27,7 @@
     <script type="text/javascript" src="js/global.js"></script>
     <!-- for mobile, responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>新聞 | POP!流行樂</title>
+    <title>課本 | POP!流行樂</title>
   </head>
   <body>
     <nav id="topbar">
@@ -45,7 +45,28 @@
     <div class="horizontal wrapper">
       <div class="vertical wrapper">
         <div id="content">
-          <section id="news"></section>
+          <header id="header">
+            <h1 id="title" class="ui header">流行音樂是什麼<a href="lesson" class="ui black label float right"><i class="icon level up"></i>回五年級上學期</a></h1>
+            <div class="ui secondary pointing menu"><a data-name="slide" class="item">投影片</a><a data-name="textbook" class="item active">課本</a><a data-name="manual" class="item">教師手冊</a><a data-name="homework" class="item">學習單</a><a data-name="songs" class="item">歌單</a><a data-name="discuss" class="item">教案</a>
+              <div class="right menu"><a data-name="download" class="item">下載</a></div>
+            </div>
+          </header>
+          <article id="textbook" class="section"></article>
+          <div id="discuss" class="section hidden">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES * * */
+              var disqus_shortname = 'mocpopmusic';
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          <div id="download" class="section hidden"><a href="" class="ui icon right labeled button">投影片<i class="icon download"></i></a><a href="" class="ui icon right labeled button">課本<i class="icon download"></i></a><a href="" class="ui icon right labeled button">教師手冊<i class="icon download"></i></a><a href="" class="ui icon right labeled button">學習單<i class="icon download"></i></a><a href="" class="ui icon right labeled button">歌單<i class="icon download"></i></a></div>
         </div>
       </div>
     </div>
@@ -54,6 +75,17 @@
         <div class="right menu"><a target="_blank" href="" class="ui button item">中華民國文化部<i class="icon forward mail"></i></a><a target="_blank" href="" class="ui button item">大塊文化<i class="icon forward mail"></i></a></div>
       </div>
     </footer>
-    <script>$("#topbar .icon.announcement").parent(".item").addClass("active");</script>
+    <script>
+      $("#topbar .icon.book").parent(".item").addClass("active");
+      $('.popup').popup();
+      //-$('#title').load('book/1/1.html h1');
+      $('#textbook').load('book/1/1.html p');
+      $('#header .menu .item').on('click tap',function(){
+        $('#header .menu .item').removeClass('active');
+        $(this).addClass('active');
+        $('.section').hide();
+        $('.section#' + $(this).attr('data-name')).show();
+      });
+    </script>
   </body>
 </html>

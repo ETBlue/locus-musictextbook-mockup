@@ -31,106 +31,55 @@
   </head>
   <body>
     <nav id="topbar">
-      <div class="ui borderless menu bar inverted"><a href="index" class="item"><img src="img/logo-white.png" class="logo image"/></a><a href="news" class="item">最新消息</a><a href="lesson" class="item">課程內容</a><a href="music" class="item">影音資料庫</a>
+      <div class="ui borderless menu bar inverted"><a href="news" class="item"><i class="icon announcement"></i>最新消息</a><a href="lesson" class="item"><i class="icon book"></i>課程內容</a><a href="music" class="item"><i class="icon music"></i>影音資料庫</a>
         <div class="right menu">
-          <div class="item">
-            <div class="ui icon input inverted transparent">
-              <input placeholder="搜尋..." type="text"/><i class="icon search link"></i>
+          <div class="ui simple dropdown item">忠孝國小<i class="icon dropdown"></i>
+            <div class="menu">
+              <div class="item"><i class="icon info"></i>帳號資訊</div>
+              <div class="item"><i class="icon log out"></i>登出</div>
             </div>
-          </div><a href="download" class="item">下載<i class="icon download"></i></a>
+          </div>
         </div>
       </div>
     </nav>
-    <div id="content">
-      <section id="lesson">
-        <header id="header">
-          <div class="page wrapper">
-            <p class="header">(本週熱門單元 / 裝飾圖片)</p>
-          </div>
-        </header>
-        <div class="page wrapper">
-          <div class="ui segment">
-            <div class="ui top attached label teal">
-              <h3><span class="title">五年級（第一冊）</span><span class="float right">
-                  <div class="ui icon right labeled button compact basic black">下載電子書<i class="icon down chevron"></i></div></span></h3>
-            </div>
-            <div class="placeholder"></div>
-            <div class="download section hidden">
-              <div class="ui icon right labeled compact button red">epub<i class="icon download"></i></div>
-              <div class="ui icon right labeled compact button red">mobi<i class="icon download"></i></div>
-              <div class="ui icon right labeled compact button red">pdf<i class="icon download"></i></div>
-            </div>
-            <div class="ui two column stackable grid divided">
-              <div class="column">
-                <h3>
-                  <div class="ui tiny horizontal label black">第一單元</div>爺爺奶奶的流行歌
-                </h3>
-                <div class="ui divided list">
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第一課</div>什麼是流行音樂</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第二課</div>時光機器教流行歌</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第三課</div>唱爺爺奶奶的流行歌</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
+    <div class="horizontal wrapper">
+      <div class="vertical wrapper">
+        <div id="content">
+          <section id="lesson">
+            <div class="ui fluid four item menu"><a class="item active">流行音樂與我
+                <div class="ui label">五上</div></a><a class="item">流行音樂與生活
+                <div class="ui label">五下</div></a><a class="item">流行音樂與社會
+                <div class="ui label">六上</div></a><a class="item">流行音樂與世界
+                <div class="ui label">六下</div></a></div>
+            <div class="ui divided items">
+              <div class="item"><a href="lesson-1-1" class="image"><img src="img/image.png"/></a>
+                <div class="content"><a href="lesson-1-1" class="header">流行音樂是什麼</a>
+                  <div class="description">
+                    <p>其實現在我們所謂的「古典樂」（比如莫札特、貝多芬），多數就是以前年代曾經盛極一時的「流行樂」；相對來說，當代的流行音樂中則又有很多結合古典音樂的元素（比如Beatles使用過巴哈，Queen以歌劇編曲），我們將會從這些有趣實例破題，讓小朋友知道流行音樂在人類文明歷史上的恆久價值（而不只是朝生暮死、狹義的「流行」而已）。同時，也藉此給予「流行音樂」一個簡單明瞭的界定：「深受民眾喜歡的、能在社會上廣為散播並流傳的音樂，就是流行音樂」。</p>
+                  </div>
+                  <div class="extra"><a href="" class="ui button">投影片</a><a href="" class="ui button">課本</a><a href="" class="ui button">教師手冊</a><a href="" class="ui button">學習單</a><a href="" class="ui button">歌單</a><a href="" class="ui button">教案</a><a href="" class="ui icon right labeled button">下載<i class="icon download"></i></a></div>
                 </div>
               </div>
-              <div class="column">
-                <h3>
-                  <div class="ui tiny horizontal label black">第二單元</div>民歌與創作
-                </h3>
-                <div class="ui divided list">
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第一課</div>民歌的開始</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第二課</div>練唱民歌</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第三課</div>音樂創作、音樂消費及著作權</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
+              <div class="item"><a href="lesson-1-1" class="image"><img src="img/image.png"/></a>
+                <div class="content"><a href="lesson-1-1" class="header">流行音樂和我的喜怒哀樂</a>
+                  <div class="description">
+                    <p>首先介紹流行歌曲的基本構成：旋律、節奏、歌詞。並且從最基礎的、流行音樂如何引導個體自我進行情緒表達談起。課程內容將透過我們選取的若干古今中外有名歌曲，作為案例分別代表喜愛、憤怒、哀傷和開心等幾種基本情緒的表現。透過交叉討論，要讓小朋友知道：這些情緒表達不僅透過歌詞（這其實是文學就做得到的），更需連帶有相應情緒的旋律（如大小調的差別）和節奏（如快慢歌的設計）。此外，除了聆聽案例，本課也會嘗試讓小朋友分組練習寫一段帶有不同情緒的歌詞、並進行即興的哼唱遊戲。</p>
+                  </div>
+                  <div class="extra"><a href="" class="ui button">投影片</a><a href="" class="ui button">課本</a><a href="" class="ui button">教師手冊</a><a href="" class="ui button">學習單</a><a href="" class="ui button">歌單</a><a href="" class="ui button">教案</a><a href="" class="ui icon right labeled button">下載<i class="icon download"></i></a></div>
+                </div>
+              </div>
+              <div class="item"><a href="lesson-1-1" class="image"><img src="img/image.png"/></a>
+                <div class="content"><a href="lesson-1-1" class="header">流行音樂和我的身體五感</a>
+                  <div class="description">
+                    <p>流行「歌」是流行「音樂」的主要構成形式，但流行音樂卻不一定是有歌詞的表現（比如電音舞曲），也可能只有節奏和詞卻不太有旋律（比如饒舌）。這些多元的流行音樂創作，都不斷在呼應個體自我在情緒表達以外的身體感官知覺：包括視覺、聽覺、味覺、嗅覺、觸覺。這節課就是要透過一些古今中外選曲，讓小朋友用身體去「體驗」流行音樂所能喚起和聯結的感官愉悅。比如說，聽到這首歌或曲，你腦海會浮現什麼畫面？聞到什麼味道？覺得溫暖或發冷？更進一步，這節課也會讓小朋友透過實際「聞歌起舞」、動起來，了解流行音樂和身體律動乃至各類舞蹈的密切關係。</p>
+                  </div>
+                  <div class="extra"><a href="" class="ui button">投影片</a><a href="" class="ui button">課本</a><a href="" class="ui button">教師手冊</a><a href="" class="ui button">學習單</a><a href="" class="ui button">歌單</a><a href="" class="ui button">教案</a><a href="" class="ui icon right labeled button">下載<i class="icon download"></i></a></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="ui segment">
-            <div class="ui top attached label green">
-              <h3><span class="title">六年級（第二冊）</span><span class="float right">
-                  <div class="ui icon right labeled button compact basic black">下載電子書<i class="icon down chevron"></i></div></span></h3>
-            </div>
-            <div class="placeholder"></div>
-            <div class="download section hidden">
-              <div class="ui icon right labeled compact button red">epub<i class="icon download"></i></div>
-              <div class="ui icon right labeled compact button red">mobi<i class="icon download"></i></div>
-              <div class="ui icon right labeled compact button red">pdf<i class="icon download"></i></div>
-            </div>
-            <div class="ui two column stackable grid divided">
-              <div class="column">
-                <h3>
-                  <div class="ui tiny horizontal label black">第三單元</div>抒情歌和搖滾
-                </h3>
-                <div class="ui divided list">
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第一課</div>歌詞動人的抒情歌</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第二課</div>旋律動人的抒情歌</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第三課</div>躍動的搖滾</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                </div>
-              </div>
-              <div class="column">
-                <h3>
-                  <div class="ui tiny horizontal label black">第四單元</div>饒舌、電音和流行音樂產業
-                </h3>
-                <div class="ui divided list">
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第一課</div>饒舌歌</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第二課</div>電子舞曲</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                  <div class="item"><a href="book.html">
-                      <div class="ui tiny horizontal label">第三課</div>流行音樂產業的表演和製作</a><span class="link float right"><a href="" data-content="教師手冊" class="popup"><i class="icon text file"></i></a><a href="" data-content="學習單" class="popup"><i class="icon text file outline"></i></a></span></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
     <footer id="bottombar">
       <div class="ui borderless menu bar inverted"><a href="" class="item"><i class="icon info"></i>關於本計畫</a><a href="" class="item"><i class="icon github"></i>關於本站</a>
@@ -139,10 +88,8 @@
     </footer>
     <script>
       $("#topbar .icon.book").parent(".item").addClass("active");
-      $(".ui.top.attached.label .down.chevron").parent(".button").on("click tap", function(){
-        $(this).parents(".ui.segment").find(".download.section").slideToggle();
-      });
       $('.popup').popup();
+      //-$('#lesson').load('book/SUMMARY.html ul');
     </script>
   </body>
 </html>
