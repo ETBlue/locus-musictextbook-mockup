@@ -1,0 +1,68 @@
+extends level-one
+
+block title
+  | 課本 | 
+
+block content
+
+  .horizontal.wrapper
+    .vertical.wrapper
+      #content
+        header#header
+          h1.ui.header#title 流行音樂是什麼
+            a(href='lesson').ui.black.label.float.right
+              i.icon.level.up
+              | 回五年級上學期
+          .ui.secondary.pointing.menu
+            a.item(data-name='slide') 投影片
+            a.item(data-name='textbook').active 課本
+            a.item(data-name='manual') 教師手冊
+            a.item(data-name='homework') 學習單
+            a.item(data-name='songs') 歌單
+            a.item(data-name='discuss') 教案
+            .right.menu
+              a.item(data-name='download') 下載
+        article#textbook.section
+
+        //-.frame
+          iframe(src="http://locus-popmusic.gitbooks.io/locus-musictextbook-demo/content/1/1.html")
+
+        #discuss.section.hidden
+          #disqus_thread
+          script(type='text/javascript').
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'mocpopmusic';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          noscript
+            | Please enable JavaScript to view the 
+            a(href='https://disqus.com/?ref_noscript', rel='nofollow') comments powered by Disqus.
+
+        #download.section.hidden
+          a(href='').ui.icon.right.labeled.button 投影片
+            i.icon.download
+          a(href='').ui.icon.right.labeled.button 課本
+            i.icon.download
+          a(href='').ui.icon.right.labeled.button 教師手冊
+            i.icon.download
+          a(href='').ui.icon.right.labeled.button 學習單
+            i.icon.download
+          a(href='').ui.icon.right.labeled.button 歌單
+            i.icon.download
+
+block script
+  script.
+    $("#topbar .icon.book").parent(".item").addClass("active");
+    $('.popup').popup();
+    //-$('#title').load('book/1/1.html h1');
+    $('#textbook').load('book/1/1.html p');
+    $('#header .menu .item').on('click tap',function(){
+      $('#header .menu .item').removeClass('active');
+      $(this).addClass('active');
+      $('.section').hide();
+      $('.section#' + $(this).attr('data-name')).show();
+    });
